@@ -1,0 +1,30 @@
+﻿@model IEnumerable<GraphAPI_WebApp.Models.User>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">GET Users</h1>
+    <p>Graph API GET Request for all the users in tenant</p>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Display Name</th>
+            <th>Mail</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.DisplayName</td>
+                <td>@user.Mail</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
