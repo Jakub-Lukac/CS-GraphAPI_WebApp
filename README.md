@@ -1,6 +1,7 @@
-# Graph API implemented in Asp.NET Core 
+# Graph API implemented in Asp.NET Core
 
 ## Project Overview
+
 Making Graph API request to list all the users in a specific tenant. Project is only focused on implementing Graph API inside the Asp.NET Core, and not the UI of the app.
 
 The core of this application is the Program.cs file, which includes all the necessary configuration for the run.
